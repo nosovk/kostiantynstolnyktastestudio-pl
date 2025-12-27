@@ -1,8 +1,7 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { fade, fly } from 'svelte/transition';
 	import TasteIllustration from '$lib/components/TasteIllustration.svelte';
-
-	let visible = true;
 </script>
 
 <svelte:head>
@@ -52,8 +51,8 @@
 				</div>
 			</div>
 			<div class="links">
-				<a href="/privacy">Privacy Policy</a>
-				<a href="/terms">Terms of Service</a>
+				<a href={resolve('/privacy')}>Privacy Policy</a>
+				<a href={resolve('/terms')}>Terms of Service</a>
 			</div>
 		</div>
 	</footer>
